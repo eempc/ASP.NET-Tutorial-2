@@ -8,10 +8,10 @@ namespace WebApplication2.Models {
     public class Movie {
         public int ID { get; set; }
 
-        [StringLength(60, MinimumLength = 3)]
-        [Required]
+        [StringLength(60, MinimumLength = 3), Required] // One line for both
         public string Title { get; set; }
-        
+
+        //[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; } // Is date picker
