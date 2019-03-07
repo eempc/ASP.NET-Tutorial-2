@@ -9,7 +9,7 @@ using WebApplication2.Models;
 namespace WebApplication2 {
     public class Program {
         public static void Main(string[] args) {
-            //CreateWebHostBuilder(args).Build().Run(); // remove the auto run and replace without the .run as a var
+            //CreateWebHostBuilder(args).Build().Run(); // standard run
             var host = CreateWebHostBuilder(args).Build();
 
             // Seed data stuff, otherwise none of this is needed (migration?). Yeah apparently this is unnecessary in a real thing, it's just for test data
